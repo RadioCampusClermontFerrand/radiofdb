@@ -204,7 +204,8 @@
                 display: none;
         }
         
-        .entry-2buttons > span {
+        .entry-2buttons > span,
+        .entry-1button > span {
             float: right;
             display: none;
         }
