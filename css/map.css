@@ -1,0 +1,42 @@
+img {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+#page-header {
+    position: absolute;
+    z-index: 1;
+    top: 55px;
+    left: 30px;
+}
+#page-header h1 {
+    font-weight: bold;
+    font-size: 30px;
+    color: black;
+}
+#page-header h1 small {
+    display: block;
+    font-size: 27%;
+    color: black;
+    text-align: right;
+    margin-top: -5px;
+}
+#page-header h1 .red {
+    color: #D90E22;
+}
+
+@media (min-width: 768px) {
+    #page-header h1 {
+        font-size: 60px;
+    }
+}
+
+@media (min-width: 1330px) {
+    #page-header h1 {
+        font-size: 70px;
+    }
+}

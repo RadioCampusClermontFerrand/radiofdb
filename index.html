@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>RadioFDB</title>
+
+    <!-- Bootstrap -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet"></link>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    
+    <link href="css/sidebar.css" rel="stylesheet"></link>
+    <link href="css/map.css" rel="stylesheet"></link>
+    <link href="css/main.css" rel="stylesheet"></link>
+  </head>
+  <body>  
+  <!-- barre latérale -->
+    <nav class="navbar navbar-inverse sidebar" role="navigation">
+        <div class="container-fluid">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-sidebar-navbar-collapse-1">
+                                    <span class="sr-only">Navigation</span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                            </button>
+                            <a class="navbar-brand" href="#">Écouter...</a>
+                    </div>
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse" id="bs-sidebar-navbar-collapse-1">
+			<ul class="nav navbar-nav">
+                            <li class="dropdown">
+					<a type="button" style="font-size:16px; z-index: 2; float: left;" class="showopacity glyphicon glyphicon-headphones main-play"></a>
+					<a style="z-index: 2; float: left; cursor: pointer; " class="main-pause hide"><span style="font-size:16px; z-index: 2; float: left;" class="showopacity glyphicon glyphicon-pause"></span></a>
+					<a href="#" style="z-index: 1;" class="dropdown-toggle selected-menu" data-toggle="dropdown"><span class="pull-right">Le quartier</span><span  style="font-size:16px;" class="showopacity glyphicon glyphicon-map-marker"></span></a>
+					<ul class="list-group playlist" style="clear: left;">
+                                            <li class="list-group-item"><p>TODO texte d'introduction.</p>
+                                            </li>
+                                            <li role="separator" class="divider"></li>
+                                            <li class="list-group-item"><div class="list-group-horizontal">
+                                                    <div class="list-group-item entry-2buttons">Les habitants 
+                                                        <span id="timer-b1p1">
+                                                            <span id="currentTime-b1p1">00:00</span> / 
+                                                            <span id="duration-b1p1">-</span>
+                                                        </span>
+                                                    </div>
+                                                    <a class="list-group-item pull-right play" id="b1p1"><span style="font-size:16px;" class="showopacity glyphicon glyphicon-play"></span></a>
+                                                    <a class="list-group-item pull-right pause hide" id="b1p1-pause"><span style="font-size:16px;" class="showopacity glyphicon glyphicon-pause"></span></a>
+                                                    </div>
+                                            </li>
+                                            <li class="list-group-item"><div class="list-group-horizontal">
+                                                    <div class="list-group-item entry-2buttons">Les habitants (2)
+                                                        <span id="timer-b1p2">
+                                                            <span id="currentTime-b1p2">00:00</span> / 
+                                                            <span id="duration-b1p2">-</span>
+                                                        </span>
+                                                    </div>
+                                                    <a class="list-group-item pull-right play" id="b1p2"><span style="font-size:16px;" class="showopacity glyphicon glyphicon-play"></span></a>
+                                                    <a class="list-group-item pull-right pause hide" id="b1p2-pause"><span style="font-size:16px;" class="showopacity glyphicon glyphicon-pause"></span></a>
+                                                    </div>
+                                            </li>
+                                            <li class="list-group-item"><div class="list-group-horizontal">
+                                                    <div class="list-group-item entry-2buttons">La maison de quartier
+                                                        <span id="timer-b1p3">
+                                                            <span id="currentTime-b1p3">00:00</span> / 
+                                                            <span id="duration-b1p3">-</span>
+                                                        </span>
+                                                    </div>
+                                                    <a class="list-group-item pull-right play" id="b1p3"><span style="font-size:16px;" class="showopacity glyphicon glyphicon-play"></span></a>
+                                                    <a class="list-group-item pull-right pause hide" id="b1p3-pause"><span style="font-size:16px;" class="showopacity glyphicon glyphicon-pause"></span></a>
+                                                    </div>
+                                            </li>
+                                            <li class="list-group-item"><div class="list-group-horizontal">
+                                                    <div class="list-group-item entry-2buttons">La maison de quartier (2)
+                                                        <span id="timer-b1p4">
+                                                            <span id="currentTime-b1p4">00:00</span> / 
+                                                            <span id="duration-b1p4">-</span>
+                                                        </span>
+                                                    </div>
+                                                    <a class="list-group-item pull-right play" id="b1p4"><span style="font-size:16px;" class="showopacity glyphicon glyphicon-play"></span></a>
+                                                    <a class="list-group-item pull-right pause hide" id="b1p4-pause"><span style="font-size:16px;" class="showopacity glyphicon glyphicon-pause"></span></a>
+                                                </div>
+                                            </li>
+                                            <li role="separator" class="divider"></li>
+                                            <li class="list-group-item">
+                                                <p> TODO: informations partenariat <br />
+                                                    <strong>Production&nbsp;:</strong> <a href="http://campus-clermont.net">Radio Campus Clermont-Ferrand</a>
+                                                    </p>
+                                                <p class="comment">TODO coordonnées <a href="http://www.openstreetmap.org/?mlat=45.766755&mlon=3.090278#map=16/45.7669/3.0921"><span class="showopacity glyphicon glyphicon-map-marker"></span></a></p>
+                                            </li>
+					</ul>
+                            </li>
+                            <li role="separator" class="divider"></li>
+                            <li class="dropdown">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown"><span style="font-size:16px;" class="showopacity glyphicon glyphicon-info-sign"></span><span class="pull-right">Crédits</span><span class="caret pull-right"></span> </a>
+					<ul class="dropdown-menu forAnimate" role="menu">
+                                            <li><a href="http://campus-clermont.net">Radio Campus Clermont-Ferrand</a></li>
+                                            <li>TODO autres liens</li>
+					</ul>
+                            </li>
+                        </ul>
+                    </div>
+            </div>
+    </nav>
+
+
+    <div id="jquery_jplayer_1" class="jp-jplayer"></div>
+  
+  <div class="main">
+    <div id="content">
+        <img src="images/carte_web-01.jpg" class="img-content" alt="carte de la promenade" />
+    </div>
+    <div id="page-header">
+    <h1><span class="red">Radio</span>FDB<small>Radio Campus à la Fontaine du Bac</small></h1>
+  </div>
+  </div>
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="jquery/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <!-- sidebar -->
+    <script src="js/sidebar.js"></script>
+    <script src="jplayer/jquery.jplayer.js"></script>
+    <script src="js/player.js"></script>
+    
+  </body>
+</html>
