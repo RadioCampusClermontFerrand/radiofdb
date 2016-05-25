@@ -17,6 +17,7 @@ img {
     font-weight: bold;
     font-size: 30px;
     color: black;
+    text-shadow: 0px 0px 20px #fff;
 }
 #page-header h1 small {
     display: block;
@@ -24,9 +25,10 @@ img {
     color: black;
     text-align: right;
     margin-top: -5px;
+    text-shadow: 0px 0px 5px #fff;
 }
 #page-header h1 .red {
-    color: #D90E22;
+    color: #C70039;
 }
 
 @media (min-width: 768px) {

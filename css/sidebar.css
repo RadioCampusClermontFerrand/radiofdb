@@ -1,5 +1,6 @@
     body,html{
 		height: 100%;
+                background-color: #83c11f;
 	}
 	
         nav.sidebar {
@@ -30,6 +31,14 @@
 	.main{
 		padding: 0;
 	}
+        
+        /*colors dropdown box text */
+	.navbar-inverse .navbar-nav .open .dropdown-menu>li>a {
+            color: #333;
+        }
+	.navbar-inverse .navbar-nav .open .dropdown-menu>li>a:hover {
+            color: #000;
+        }
 
 	/* .....NavBar: Icon only with coloring/layout.....*/
 
@@ -92,10 +101,6 @@
 			padding: 0 0px 0 0px;
 		}
 
-		/*colors dropdown box text */
-		.navbar-inverse .navbar-nav .open .dropdown-menu>li>a {
-			color: #777;
-		}
 
 		/*gives sidebar width/height*/
 		nav.sidebar{
@@ -233,3 +238,26 @@
             display: none;
         }
         
+
+        .navbar-inverse {
+                background-color: #83c11f;
+                border-color: #e5e5e5;
+                border-bottom: 0px;
+                border-top: 0px;
+        }
+        .navbar-inverse .navbar-nav>li>a {
+            color: #000;
+        }
+        .navbar-inverse .navbar-brand {
+            color: #000;
+        }
+        .navbar-inverse .navbar-toggle {
+            /*color: #e5e5e5;*/
+            border-color: #e5e5e5;
+        }
+        .navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:focus, .navbar-inverse .navbar-nav>.open>a:hover {
+            background-color: #699818;
+        }
+        a {
+                color: #900C3F;
+        }
