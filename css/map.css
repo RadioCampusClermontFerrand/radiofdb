@@ -14,7 +14,7 @@ img {
     left: 30px;
 }
 #page-header h1 {
-    font-weight: bold;
+    font-weight: normal;
     font-size: 30px;
     color: black;
     text-shadow: 0px 0px 20px #fff;
@@ -26,6 +26,7 @@ img {
     text-align: right;
     margin-top: -5px;
     text-shadow: 0px 0px 5px #fff;
+    font-family: "Raisonne";
 }
 #page-header h1 .red {
     color: #C70039;
