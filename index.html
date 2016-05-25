@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>RadioFDB</title>
+    <title>Radio FDB</title>
 
     <!-- Bootstrap -->
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet"></link>
@@ -41,14 +41,24 @@
                             <li class="dropdown">
 					<a type="button" style="font-size:16px; z-index: 2; float: left;" class="showopacity glyphicon glyphicon-headphones main-play"></a>
 					<a style="z-index: 2; float: left; cursor: pointer; " class="main-pause hide"><span style="font-size:16px; z-index: 2; float: left;" class="showopacity glyphicon glyphicon-pause"></span></a>
-					<a href="#" style="z-index: 1;" class="dropdown-toggle selected-menu" data-toggle="dropdown"><span class="pull-right">Festival Bac Ground</span><span  style="font-size:16px;" class="showopacity glyphicon glyphicon-map-marker"></span></a>
+					<a href="#" style="z-index: 1;" class="dropdown-toggle selected-menu" data-toggle="dropdown"><span class="pull-right">Session 2016</span><span  style="font-size:16px;" class="showopacity glyphicon glyphicon-map-marker"></span></a>
 					<ul class="list-group playlist" style="clear: left;">
-                                            <li class="list-group-item"><p>TODO texte d'introduction.</p>
-                                            </li>
-                                            <li role="separator" class="divider"></li>
                                             <li class="list-group-item"><div class="list-group-horizontal">
-                                                    <div class="list-group-item entry-1button">Interview d'habitants
-                                                        <span id="timer-b1p1">
+                                                    <div class="list-group-item entry-1button"><span class="puce">0</span> Bande annonce
+                                                        <span class="timer" id="timer-b1p0">
+                                                            <span id="currentTime-b1p0">00:00</span> / 
+                                                            <span id="duration-b1p0">-</span>
+                                                        </span>
+                                                    </div>
+                                                    <a class="list-group-item pull-right play" id="b1p0"><span style="font-size:16px;" class="showopacity glyphicon glyphicon-play"></span></a>
+                                                    <a class="list-group-item pull-right pause hide" id="b1p0-pause"><span style="font-size:16px;" class="showopacity glyphicon glyphicon-pause"></span></a>
+                                                    </div>
+                                            </li>
+                                            <li class="list-group-item"><p><strong>Je me souviens... le festival</strong></p>
+                                            </li>
+                                            <li class="list-group-item"><div class="list-group-horizontal">
+                                                    <div class="list-group-item entry-1button"><span class="puce">1</span> Premiers souvenirs
+                                                        <span class="timer" id="timer-b1p1">
                                                             <span id="currentTime-b1p1">00:00</span> / 
                                                             <span id="duration-b1p1">-</span>
                                                         </span>
@@ -58,8 +68,8 @@
                                                     </div>
                                             </li>
                                             <li class="list-group-item"><div class="list-group-horizontal">
-                                                    <div class="list-group-item entry-1button">Interview d'habitants (2)
-                                                        <span id="timer-b1p2">
+                                                    <div class="list-group-item entry-1button"><span class="puce">2</span> À manger&nbsp;!
+                                                        <span class="timer" id="timer-b1p2">
                                                             <span id="currentTime-b1p2">00:00</span> / 
                                                             <span id="duration-b1p2">-</span>
                                                         </span>
@@ -69,8 +79,8 @@
                                                     </div>
                                             </li>
                                             <li class="list-group-item"><div class="list-group-horizontal">
-                                                    <div class="list-group-item entry-1button">Interview - la maison de quartier
-                                                        <span id="timer-b1p3">
+                                                    <div class="list-group-item entry-1button"><span class="puce">3</span> Bénévoles
+                                                        <span class="timer" id="timer-b1p3">
                                                             <span id="currentTime-b1p3">00:00</span> / 
                                                             <span id="duration-b1p3">-</span>
                                                         </span>
@@ -80,14 +90,112 @@
                                                     </div>
                                             </li>
                                             <li class="list-group-item"><div class="list-group-horizontal">
-                                                    <div class="list-group-item entry-1button">Interview 2 - la maison de quartier
-                                                        <span id="timer-b1p4">
+                                                    <div class="list-group-item entry-1button"><span class="puce">4</span> Pendant le festival
+                                                        <span class="timer" id="timer-b1p4">
                                                             <span id="currentTime-b1p4">00:00</span> / 
                                                             <span id="duration-b1p4">-</span>
                                                         </span>
                                                     </div>
                                                     <a class="list-group-item pull-right play" id="b1p4"><span style="font-size:16px;" class="showopacity glyphicon glyphicon-play"></span></a>
                                                     <a class="list-group-item pull-right pause hide" id="b1p4-pause"><span style="font-size:16px;" class="showopacity glyphicon glyphicon-pause"></span></a>
+                                                    </div>
+                                            </li>
+                                            <li class="list-group-item"><div class="list-group-horizontal">
+                                                    <div class="list-group-item entry-1button"><span class="puce">5</span> La fin du festival
+                                                        <span class="timer" id="timer-b1p5">
+                                                            <span id="currentTime-b1p5">00:00</span> / 
+                                                            <span id="duration-b1p5">-</span>
+                                                        </span>
+                                                    </div>
+                                                    <a class="list-group-item pull-right play" id="b1p5"><span style="font-size:16px;" class="showopacity glyphicon glyphicon-play"></span></a>
+                                                    <a class="list-group-item pull-right pause hide" id="b1p5-pause"><span style="font-size:16px;" class="showopacity glyphicon glyphicon-pause"></span></a>
+                                                    </div>
+                                            </li>
+                                            <li role="separator" class="divider"></li>
+                                            <li class="list-group-item"><p><strong>Je me souviens... le quartier</strong></p>
+                                            </li>
+                                            <li class="list-group-item"><div class="list-group-horizontal">
+                                                    <div class="list-group-item entry-1button"><span class="puce">6</span> Souvenirs du quartier (1)
+                                                        <span class="timer" id="timer-b1p6">
+                                                            <span id="currentTime-b1p6">00:00</span> / 
+                                                            <span id="duration-b1p6">-</span>
+                                                        </span>
+                                                    </div>
+                                                    <a class="list-group-item pull-right play" id="b1p6"><span style="font-size:16px;" class="showopacity glyphicon glyphicon-play"></span></a>
+                                                    <a class="list-group-item pull-right pause hide" id="b1p6-pause"><span style="font-size:16px;" class="showopacity glyphicon glyphicon-pause"></span></a>
+                                                    </div>
+                                            </li>
+                                            <li class="list-group-item"><div class="list-group-horizontal">
+                                                    <div class="list-group-item entry-1button"><span class="puce">7</span> Souvenirs du quartier (2)
+                                                        <span class="timer" id="timer-b1p7">
+                                                            <span id="currentTime-b1p7">00:00</span> / 
+                                                            <span id="duration-b1p7">-</span>
+                                                        </span>
+                                                    </div>
+                                                    <a class="list-group-item pull-right play" id="b1p7"><span style="font-size:16px;" class="showopacity glyphicon glyphicon-play"></span></a>
+                                                    <a class="list-group-item pull-right pause hide" id="b1p7-pause"><span style="font-size:16px;" class="showopacity glyphicon glyphicon-pause"></span></a>
+                                                    </div>
+                                            </li>
+                                            <li role="separator" class="divider"></li>
+                                            <li class="list-group-item"><p><strong>Je me souviens... les sorties</strong></p>
+                                            </li>
+                                            <li class="list-group-item"><div class="list-group-horizontal">
+                                                    <div class="list-group-item entry-1button"><span class="puce">8</span> Souvenirs de sorties
+                                                        <span class="timer" id="timer-b1p8">
+                                                            <span id="currentTime-b1p8">00:00</span> / 
+                                                            <span id="duration-b1p8">-</span>
+                                                        </span>
+                                                    </div>
+                                                    <a class="list-group-item pull-right play" id="b1p8"><span style="font-size:16px;" class="showopacity glyphicon glyphicon-play"></span></a>
+                                                    <a class="list-group-item pull-right pause hide" id="b1p8-pause"><span style="font-size:16px;" class="showopacity glyphicon glyphicon-pause"></span></a>
+                                                    </div>
+                                            </li>
+                                            <li role="separator" class="divider"></li>
+                                            <li class="list-group-item"><p><strong>Interviews</strong></p>
+                                            </li>
+                                            <li role="separator" class="divider"></li>
+                                            <li class="list-group-item"><div class="list-group-horizontal">
+                                                    <div class="list-group-item entry-1button"><span class="puce">9</span> La maison de quartier
+                                                        <span class="timer" id="timer-b1p9">
+                                                            <span id="currentTime-b1p9">00:00</span> / 
+                                                            <span id="duration-b1p9">-</span>
+                                                        </span>
+                                                    </div>
+                                                    <a class="list-group-item pull-right play" id="b1p9"><span style="font-size:16px;" class="showopacity glyphicon glyphicon-play"></span></a>
+                                                    <a class="list-group-item pull-right pause hide" id="b1p9-pause"><span style="font-size:16px;" class="showopacity glyphicon glyphicon-pause"></span></a>
+                                                    </div>
+                                            </li>
+                                            <li class="list-group-item"><div class="list-group-horizontal">
+                                                    <div class="list-group-item entry-1button"><span class="puce">10</span> La maison de quartier (2)
+                                                        <span class="timer" id="timer-b1p10">
+                                                            <span id="currentTime-b1p10">00:00</span> / 
+                                                            <span id="duration-b1p10">-</span>
+                                                        </span>
+                                                    </div>
+                                                    <a class="list-group-item pull-right play" id="b1p10"><span style="font-size:16px;" class="showopacity glyphicon glyphicon-play"></span></a>
+                                                    <a class="list-group-item pull-right pause hide" id="b1p10-pause"><span style="font-size:16px;" class="showopacity glyphicon glyphicon-pause"></span></a>
+                                                    </div>
+                                            </li>
+                                            <li class="list-group-item"><div class="list-group-horizontal">
+                                                    <div class="list-group-item entry-1button"><span class="puce">11</span> Les habitants
+                                                        <span class="timer" id="timer-b1p11">
+                                                            <span id="currentTime-b1p11">00:00</span> / 
+                                                            <span id="duration-b1p11">-</span>
+                                                        </span>
+                                                    </div>
+                                                    <a class="list-group-item pull-right play" id="b1p11"><span style="font-size:16px;" class="showopacity glyphicon glyphicon-play"></span></a>
+                                                    <a class="list-group-item pull-right pause hide" id="b1p11-pause"><span style="font-size:16px;" class="showopacity glyphicon glyphicon-pause"></span></a>
+                                                    </div>
+                                            </li>
+                                            <li class="list-group-item"><div class="list-group-horizontal">
+                                                    <div class="list-group-item entry-1button"><span class="puce">12</span> Les habitants (2)
+                                                        <span class="timer" id="timer-b1p12">
+                                                            <span id="currentTime-b1p12">00:00</span> / 
+                                                            <span id="duration-b1p12">-</span>
+                                                        </span>
+                                                    </div>
+                                                    <a class="list-group-item pull-right play" id="b1p12"><span style="font-size:16px;" class="showopacity glyphicon glyphicon-play"></span></a>
+                                                    <a class="list-group-item pull-right pause hide" id="b1p12-pause"><span style="font-size:16px;" class="showopacity glyphicon glyphicon-pause"></span></a>
                                                 </div>
                                             </li>
                                             <li role="separator" class="divider"></li>
