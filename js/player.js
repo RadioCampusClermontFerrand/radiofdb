@@ -50,7 +50,7 @@ for(var pastille in tracks) {
                         $('.play').removeClass('hide');
                         $('.main-play').addClass('hide');
                         $('.main-pause').removeClass('hide');
-                        $('.entry-2buttons > span').css("display", "none");
+                        $('.entry-1button > span').css("display", "none");
                         if (selected == this.id) {
                                 $("#jquery_jplayer_1").jPlayer("play");
                         }
