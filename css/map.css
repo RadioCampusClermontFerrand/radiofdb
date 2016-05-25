@@ -35,6 +35,12 @@ img {
 @media (min-width: 768px) {
     #page-header h1 {
         font-size: 60px;
+        position: fixed;
+    }
+    #content {
+        position: fixed;
+        top: 0;
+        left: 0;
     }
 }
 
