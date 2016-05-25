@@ -37,7 +37,7 @@
             color: #333;
         }
 	.navbar-inverse .navbar-nav .open .dropdown-menu>li>a:hover {
-            color: #000;
+            color: #fff !important;
         }
 
 	/* .....NavBar: Icon only with coloring/layout.....*/
@@ -262,4 +262,8 @@
         }
         a {
                 color: #900C3F;
+        }
+        
+        .main-play {
+                margin-top: -1px;
         }
